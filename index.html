@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نخبة زمزم - شركة صناعة المواد الغذائية</title>
+    <title> زمزم - شركة صناعة المواد الغذائية</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2E7D32;
-            --primary-light: #4CAF50;
-            --primary-dark: #1B5E20;
-            --accent: #FF9800;
-            --accent-light: #FFB74D;
+            --primary: #3b82f6; /* الأزرق الفاتح */
+            --primary-light: #60a5fa; /* الأزرق الأفتح */
+            --primary-dark: #2563eb; /* الأزرق الداكن قليلاً */
+            --accent: #38bdf8; /* الأزرق السماوي */
+            --accent-light: #7dd3fc; /* الأزرق السماوي الفاتح */
         }
         
         body {
@@ -70,33 +70,33 @@
         }
         
         @keyframes pulse-glow {
-            0% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4); }
-            70% { box-shadow: 0 0 0 15px rgba(46, 125, 50, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(59, 130, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
         }
         
         .gradient-bg-1 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
         }
         
         .gradient-bg-2 {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%);
         }
         
         .gradient-bg-3 {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
         }
         
         .gradient-bg-4 {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            background: linear-gradient(135deg, #a5f3fc 0%, #7dd3fc 100%);
         }
         
         .gradient-bg-5 {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%);
         }
         
         .gradient-bg-6 {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
         }
         
         .parallax {
@@ -203,37 +203,37 @@
         }
         
         .badge-protein {
-            background: linear-gradient(135deg, #FF9800, #FF5722);
+            background: linear-gradient(135deg, #7dd3fc, #38bdf8);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .badge-calcium {
-            background: linear-gradient(135deg, #2196F3, #03A9F4);
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .badge-natural {
-            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .badge-premium {
-            background: linear-gradient(135deg, #9C27B0, #E91E63);
+            background: linear-gradient(135deg, #7dd3fc, #38bdf8);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .badge-energy {
-            background: linear-gradient(135deg, #FFC107, #FF9800);
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .badge-vitamin {
-            background: linear-gradient(135deg, #00BCD4, #009688);
+            background: linear-gradient(135deg, #7dd3fc, #38bdf8);
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
@@ -242,12 +242,12 @@
             font-size: 1.6rem;
             font-weight: bold;
             margin-bottom: 12px;
-            color: #2C3E50;
+            color: #1e40af;
         }
         
         .product-subtitle {
             font-size: 1.1rem;
-            color: #7F8C8D;
+            color: #4b5563;
             margin-bottom: 20px;
             line-height: 1.5;
         }
@@ -257,8 +257,8 @@
             font-weight: bold;
             margin-top: 15px;
             padding-top: 15px;
-            border-top: 2px dashed #ECF0F1;
-            color: #2E7D32;
+            border-top: 2px dashed #e5e7eb;
+            color: #2563eb;
             display: flex;
             align-items: center;
         }
@@ -266,41 +266,41 @@
         .brand-name::before {
             content: "•";
             margin-left: 10px;
-            color: #2E7D32;
+            color: #2563eb;
             font-size: 1.5rem;
         }
         
         /* ألوان خلفيات البطاقات */
         .card-bg-1 {
-            background: linear-gradient(135deg, #FFEAA7, #DAD299);
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
         }
         
         .card-bg-2 {
-            background: linear-gradient(135deg, #A1FFCE, #FAFFD1);
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
         }
         
         .card-bg-3 {
-            background: linear-gradient(135deg, #FF9A9E, #FECFEF);
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
         }
         
         .card-bg-4 {
-            background: linear-gradient(135deg, #A3BFFA, #7AE7FF);
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
         }
         
         .card-bg-5 {
-            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
         }
         
         .card-bg-6 {
-            background: linear-gradient(135deg, #FFECD2, #FCB69F);
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
         }
         
         .card-bg-7 {
-            background: linear-gradient(135deg, #E0C3FC, #8EC5FC);
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
         }
         
         .card-bg-8 {
-            background: linear-gradient(135deg, #FAD0C4, #FFD1FF);
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
         }
         
         /* معرض الصور المودال */
@@ -404,56 +404,55 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-green-800">
+<body class="bg-gradient-to-r from-blue-50 to-blue-100">
     <!-- شريط التنقل -->
-    <nav class="fixed w-full z-50 transition-all duration-500 bg-gradient-to-r from-emerald-500 to-teal-600 backdrop-blur-md shadow-lg">
+    <nav class="fixed w-full z-50 transition-all duration-500 bg-white/90 backdrop-blur-md shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <!-- الشعار -->
                 <div class="flex items-center">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 font-bold text-xl shadow-lg pulse-glow">ن</div>
-                    <span class="mr-3 text-xl font-bold bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-emerald-100">نخبة زمزم</span>
+                    <img src="logo.png" alt=" زمزم يمن" class="w-20 h-20 shadow-lg pulse-glow">
                 </div>
                 
                 <!-- روابط التنقل -->
                 <div class="hidden md:flex space-x-8 space-x-reverse">
-                    <a href="#home" class="text-emerald-100 hover:text-green-500 font-semibold transition duration-300 relative group">
+                    <a href="#home" class="text-blue-700 hover:text-blue-500 font-semibold transition duration-300 relative group">
                         الرئيسية
-                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#about" class="text-emerald-100 hover:text-green-500 font-semibold transition duration-300 relative group">
+                    <a href="#about" class="text-blue-700 hover:text-blue-500 font-semibold transition duration-300 relative group">
                         من نحن
-                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#products" class="text-emerald-100 hover:text-green-500 font-semibold transition duration-300 relative group">
+                    <a href="#products" class="text-blue-700 hover:text-blue-500 font-semibold transition duration-300 relative group">
                         المنتجات
-                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#gallery" class="text-emerald-100 hover:text-green-500 font-semibold transition duration-300 relative group">
+                    <a href="#gallery" class="text-blue-700 hover:text-blue-500 font-semibold transition duration-300 relative group">
                         معرض الصور
-                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#contact" class="text-emerald-100 hover:text-green-500 font-semibold transition duration-300 relative group">
+                    <a href="#contact" class="text-blue-700 hover:text-blue-500 font-semibold transition duration-300 relative group">
                         اتصل بنا
-                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </div>
                 
                 <!-- زر القائمة للهواتف -->
                 <div class="md:hidden">
-                    <button id="menu-toggle" class="text-emerald-100 focus:outline-none">
+                    <button id="menu-toggle" class="text-blue-700 focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             
             <!-- القائمة المنسدلة للهواتف -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-emerald-100 pt-4">
-                <a href="#home" class="block py-2 text-emerald-100 font-semibold">الرئيسية</a>
-                <a href="#about" class="block py-2 text-emerald-100 hover:text-green-500 transition duration-300">من نحن</a>
-                <a href="#products" class="block py-2 text-emerald-100 hover:text-green-500 transition duration-300">المنتجات</a>
-                <a href="#gallery" class="block py-2 text-emerald-100 hover:text-green-500 transition duration-300">معرض الصور</a>
-                <a href="#contact" class="block py-2 text-emerald-100 hover:text-green-500 transition duration-300">اتصل بنا</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-blue-700 pt-4">
+                <a href="#home" class="block py-2 text-blue-700 font-semibold">الرئيسية</a>
+                <a href="#about" class="block py-2 text-blue-700 hover:text-blue-500 transition duration-300">من نحن</a>
+                <a href="#products" class="block py-2 text-blue-700 hover:text-blue-500 transition duration-300">المنتجات</a>
+                <a href="#gallery" class="block py-2 text-blue-700 hover:text-blue-500 transition duration-300">معرض الصور</a>
+                <a href="#contact" class="block py-2 text-blue-700 hover:text-blue-500 transition duration-300">اتصل بنا</a>
             </div>
         </div>
     </nav>
@@ -465,10 +464,10 @@
             <div class="hero-slide absolute inset-0 flex items-center justify-center" style="background: url('beansbg.png') center/cover;">
                 <div class="container mx-auto px-4 text-center">
                     <div class="hero-text-container inline-block max-w-3xl stagger-animation">
-                        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">نخبة <span class="text-yellow-300">زمزم</span></h1>
+                        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">زمزم <span class="text-blue-200">يمن</span></h1>
                         <p class="text-xl md:text-2xl mb-8 text-white">جودة لا تضاهى وطعم لا يُنسى في كل لقمة</p>
                         <div>
-                            <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-green-900 font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
+                            <a href="#products" class="bg-white hover:bg-blue-100 text-blue-700 font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
                                 اكتشف منتجاتنا <i class="fas fa-arrow-left mr-2"></i>
                             </a>
                         </div>
@@ -486,10 +485,10 @@
                 <div class="container mx-auto px-4">
                     <div class="max-w-2xl">
                         <div class="hero-text-container stagger-animation">
-                            <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">منتجات <span class="text-green-400">طبيعية</span> 100%</h2>
+                            <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">منتجات <span class="text-blue-200">طبيعية</span> 100%</h2>
                             <p class="text-xl text-white mb-8">نقدم تشكيلة واسعة من المنتجات الغذائية المصنوعة من مكونات طبيعية خالية من المواد الحافظة</p>
                             <div>
-                                <a href="#about" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-800 font-bold px-8 py-4 rounded-full text-lg transition duration-300 inline-block">
+                                <a href="#about" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold px-8 py-4 rounded-full text-lg transition duration-300 inline-block">
                                     تعرف على جودتنا <i class="fas fa-leaf mr-2"></i>
                                 </a>
                             </div>
@@ -502,10 +501,10 @@
             <div class="hero-slide absolute inset-0 flex items-center" style="background: url('sodabg.png') center/cover;">
                 <div class="container mx-auto px-4 text-center">
                     <div class="hero-text-container inline-block max-w-3xl stagger-animation">
-                        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">ابتكار <span class="text-orange-400">وتطوير</span> مستمر</h2>
+                        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">ابتكار <span class="text-blue-200">وتطوير</span> مستمر</h2>
                         <p class="text-xl text-white mb-8">نواكب أحدث التقنيات في صناعة الغذاء لنقدم لكم الأفضل دائماً</p>
                         <div>
-                            <a href="#innovation" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
+                            <a href="#innovation" class="bg-white hover:bg-blue-100 text-blue-700 font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
                                 شاهد ابتكاراتنا <i class="fas fa-lightbulb mr-2"></i>
                             </a>
                         </div>
@@ -517,10 +516,10 @@
             <div class="hero-slide absolute inset-0 flex items-center" style="background: url('juicebg.png') center/cover;">
                 <div class="container mx-auto px-4 text-center">
                     <div class="hero-text-container inline-block max-w-3xl stagger-animation">
-                        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">جودة <span class="text-yellow-300">وتميز</span> في كل منتج</h2>
+                        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">جودة <span class="text-blue-200">وتميز</span> في كل منتج</h2>
                         <p class="text-xl text-white mb-8">نضمن لكم منتجات عالية الجودة تلبي أعلى المعايير العالمية</p>
                         <div>
-                            <a href="#gallery" class="bg-yellow-500 hover:bg-yellow-600 text-green-900 font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
+                            <a href="#gallery" class="bg-white hover:bg-blue-100 text-blue-700 font-bold px-8 py-4 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105 inline-block">
                                 استعرض المنتجات <i class="fas fa-arrow-left mr-2"></i>
                             </a>
                         </div>
@@ -531,24 +530,24 @@
     </section>
 
     <!-- قسم من نحن -->
-    <section id="about" class="py-20 bg-gradient-to-r from-emerald-500 to-teal-600 relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/10"></div>
+    <section id="about" class="py-20 bg-gradient-to-r from-blue-50 to-blue-100 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-12 lg:mb-0 flex justify-center">
                     <div class="relative">
-                        <div class="w-80 h-80 bg-white/20 morph-shape floating"></div>
-                        <div class="absolute -top-6 -right-6 w-64 h-64 bg-yellow-200/30 morph-shape opacity-70"></div>
+                        <div class="w-80 h-80 bg-blue-100/50 morph-shape floating"></div>
+                        <div class="absolute -top-6 -right-6 w-64 h-64 bg-blue-200/30 morph-shape opacity-70"></div>
                         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96">
-                            <div class="glass-effect rounded-2xl p-8 shadow-xl text-white">
-                                <h3 class="text-2xl font-bold mb-4">لماذا نخبة زمزم؟</h3>
+                            <div class="glass-effect rounded-2xl p-8 shadow-xl text-blue-800">
+                                <h3 class="text-2xl font-bold mb-4">لماذا زمزم يمن؟</h3>
                                 <p class="mb-4">نحن نؤمن بأن الغذاء الصحي هو حق للجميع، لذلك نعمل بجد لتقديم منتجات عالية الجودة بأسعار معقولة.</p>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check-circle ml-2 text-green-800"></i>
+                                    <i class="fas fa-check-circle ml-2 text-blue-600"></i>
                                     <span>خبرة أكثر من 20 عاماً</span>
                                 </div>
                                 <div class="flex items-center mt-2">
-                                    <i class="fas fa-check-circle ml-2 text-green-800"></i>
+                                    <i class="fas fa-check-circle ml-2 text-blue-600"></i>
                                     <span>شهادات جودة عالمية</span>
                                 </div>
                             </div>
@@ -556,21 +555,21 @@
                     </div>
                 </div>
                 
-                <div class="lg:w-1/2 lg:pr-12 text-white">
-                    <h2 class="text-4xl font-bold mb-6">شركة <span class="text-yellow-300">نخبة زمزم</span></h2>
-                    <p class="text-lg mb-6">تأسست شركة نخبة زمزم عام 2003 بهدف تقديم منتجات غذائية عالية الجودة تلبي احتياجات المستهلكين في الجمهورية اليمنية ودول الخليج.</p>
+                <div class="lg:w-1/2 lg:pr-12 text-blue-800">
+                    <h2 class="text-4xl font-bold mb-6">شركة <span class="text-blue-600">زمزم يمن </span></h2>
+                    <p class="text-lg mb-6">تأسست شركة زمزم يمن عام 2003 بهدف تقديم منتجات غذائية عالية الجودة تلبي احتياجات المستهلكين في الجمهورية اليمنية ودول الخليج.</p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-white/50 backdrop-blur-sm rounded-xl p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                            <div class="w-14 h-14 bg-green-800 rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg transform transition duration-500 hover:scale-105">
+                            <div class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl mb-4">
                                 <i class="fas fa-leaf"></i>
                             </div>
                             <h4 class="text-xl font-bold mb-2">مكونات طبيعية</h4>
                             <p>نستخدم فقط المكونات الطبيعية الخالية من المواد الحافظة الاصطناعية</p>
                         </div>
                         
-                        <div class="bg-white/50 backdrop-blur-sm rounded-xl p-6 shadow-lg transform transition duration-500 hover:scale-105">
-                            <div class="w-14 h-14 bg-green-800 rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg transform transition duration-500 hover:scale-105">
+                            <div class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl mb-4">
                                 <i class="fas fa-award"></i>
                             </div>
                             <h4 class="text-xl font-bold mb-2">جودة عالمية</h4>
@@ -578,7 +577,7 @@
                         </div>
                     </div>
                     
-                    <a href="#contact" class="inline-flex items-center bg-emerald-100 text-green-600 hover:bg-gray-100 font-bold px-6 py-3 rounded-lg transition duration-300">
+                    <a href="#contact" class="inline-flex items-center bg-blue-500 text-white hover:bg-blue-600 font-bold px-6 py-3 rounded-lg transition duration-300">
                         تواصل معنا <i class="fas fa-arrow-left mr-2"></i>
                     </a>
                 </div>
@@ -591,8 +590,8 @@
         <div class="absolute inset-0 bg-white/30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">منتجاتنا <span class="text-green-600">المتميزة</span></h2>
-                <div class="w-24 h-1 bg-green-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">منتجاتنا <span class="text-blue-600">المتميزة</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
                 <p class="text-lg text-gray-700 max-w-2xl mx-auto">نقدم تشكيلة واسعة من المنتجات الغذائية التي تلبي جميع الأذواق والاحتياجات الغذائية</p>
             </div>
             
@@ -603,13 +602,13 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
                             <h3 class="text-2xl font-bold mb-2">الزيوت النباتية</h3>
                             <p class="text-gray-200">زيت زيتون بكر ممتاز مستخلص من أجود أنواع الزيتون</p>
-                            <button class="mt-4 bg-white text-green-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
+                            <button class="mt-4 bg-white text-blue-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
                         </div>
                     </div>
                     
-                    <div class="product-back absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
+                    <div class="product-back absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
                         <h4 class="text-xl font-bold mb-4">معلومات المنتج</h4>
-                        <ul class="space-y-2 text-amber-100">
+                        <ul class="space-y-2 text-blue-100">
                             <li class="flex items-center">
                                 <i class="fas fa-check ml-2"></i>
                                 <span>زيت زيتون بكر ممتاز</span>
@@ -627,7 +626,7 @@
                                 <span>عبوة 750 مل</span>
                             </li>
                         </ul>
-                        <button class="mt-6 bg-white text-amber-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
+                        <button class="mt-6 bg-white text-blue-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
                     </div>
                 </div>
                 
@@ -641,9 +640,9 @@
                         </div>
                     </div>
                     
-                    <div class="product-back absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
+                    <div class="product-back absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
                         <h4 class="text-xl font-bold mb-4">معلومات المنتج</h4>
-                        <ul class="space-y-2 text-cyan-100">
+                        <ul class="space-y-2 text-blue-100">
                             <li class="flex items-center">
                                 <i class="fas fa-check ml-2"></i>
                                 <span>مصدر غني بالكالسيوم</span>
@@ -661,7 +660,7 @@
                                 <span>عبوة 400 جرام</span>
                             </li>
                         </ul>
-                        <button class="mt-6 bg-white text-cyan-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
+                        <button class="mt-6 bg-white text-blue-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
                     </div>
                 </div>
                 
@@ -671,13 +670,13 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
                             <h3 class="text-2xl font-bold mb-2">البهارات</h3>
                             <p class="text-gray-200">خلطات بهارات مميزة محضرة من أفضل التوابل العالمية</p>
-                            <button class="mt-4 bg-white text-red-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
+                            <button class="mt-4 bg-white text-blue-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
                         </div>
                     </div>
                     
-                    <div class="product-back absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
+                    <div class="product-back absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl overflow-hidden shadow-xl p-6 flex flex-col justify-center text-white">
                         <h4 class="text-xl font-bold mb-4">معلومات المنتج</h4>
-                        <ul class="space-y-2 text-orange-100">
+                        <ul class="space-y-2 text-blue-100">
                             <li class="flex items-center">
                                 <i class="fas fa-check ml-2"></i>
                                 <span>خلطات بهارات مميزة</span>
@@ -695,13 +694,13 @@
                                 <span>عبوة 200 جرام</span>
                             </li>
                         </ul>
-                        <button class="mt-6 bg-white text-orange-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
+                        <button class="mt-6 bg-white text-blue-700 px-4 py-2 rounded-full font-semibold self-start">اطلب الآن</button>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="#gallery" class="inline-flex items-center bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-green-600 hover:to-green-800 text-white font-bold px-8 py-4 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                <a href="#gallery" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white font-bold px-8 py-4 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
                     معرض المنتجات الكامل <i class="fas fa-arrow-left mr-2"></i>
                 </a>
             </div>
@@ -712,8 +711,8 @@
     <section id="gallery" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">معرض <span class="text-green-600">المنتجات</span></h2>
-                <div class="w-24 h-1 bg-green-600 mx-auto mb-4"></div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">معرض <span class="text-blue-600">المنتجات</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">استعرض تشكيلتنا الواسعة من المنتجات الغذائية عالية الجودة</p>
             </div>
             
@@ -750,7 +749,7 @@
                         <span class="product-badge badge-natural">100% NATURAL</span>
                         <h3 class="product-title">زبادي طبيعي</h3>
                         <p class="product-subtitle">خالي من المواد الحافظة والنكهات الاصطناعية</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name">زمزم يمن </div>
                     </div>
                 </div>
                 
@@ -762,7 +761,7 @@
                         <span class="product-badge badge-premium">PREMIUM</span>
                         <h3 class="product-title">عصير برتقال طبيعي</h3>
                         <p class="product-subtitle">معصور طازج من أجود أنواع البرتقال</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name">زمزم يمن </div>
                     </div>
                 </div>
                 
@@ -774,7 +773,7 @@
                         <span class="product-badge badge-energy">ENERGY BOOST</span>
                         <h3 class="product-title">جبنة موتزاريلا</h3>
                         <p class="product-subtitle">مصدر غني بالبروتين والكالسيوم للطاقة</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name">زمزم يمن </div>
                     </div>
                 </div>
                 
@@ -786,7 +785,7 @@
                         <span class="product-badge badge-vitamin">RICH IN VITAMINS</span>
                         <h3 class="product-title">عصير تفاح طبيعي</h3>
                         <p class="product-subtitle">خالي من السكريات المضافة وغني بالفيتامينات</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name">زمزم يمن </div>
                     </div>
                 </div>
                 
@@ -798,7 +797,7 @@
                         <span class="product-badge badge-natural">FRESH & HEALTHY</span>
                         <h3 class="product-title">سلطة طازجة</h3>
                         <p class="product-subtitle">مزيج من الخضروات الطازجة الغنية بالفيتامينات</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name">زمزم يمن </div>
                     </div>
                 </div>
                 
@@ -810,7 +809,7 @@
                         <span class="product-badge badge-premium">GOURMET</span>
                         <h3 class="product-title">حلويات طبيعية</h3>
                         <p class="product-subtitle">محضرة من مكونات طبيعية بنسبة 100%</p>
-                        <div class="brand-name">نخبة زمزم</div>
+                        <div class="brand-name"> زمزم يمن</div>
                     </div>
                 </div>
             </div>
@@ -837,34 +836,34 @@
     </section>
 
     <!-- قسم الابتكار -->
-    <section id="innovation" class="py-20 bg-gradient-to-r from-emerald-500 to-teal-600 relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/20"></div>
+    <section id="innovation" class="py-20 bg-gradient-to-r from-blue-50 to-blue-100 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/30"></div>
         <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-16 text-white">
-                <h2 class="text-4xl font-bold mb-4">الابتكار <span class="text-yellow-300">والتطوير</span></h2>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
+            <div class="text-center mb-16 text-blue-800">
+                <h2 class="text-4xl font-bold mb-4">الابتكار <span class="text-blue-600">والتطوير</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
                 <p class="text-lg max-w-2xl mx-auto">نسعى دائماً للريادة في مجال صناعة الغذاء من خلال الابتكار والتطوير المستمر</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/30 text-emerald-100">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 text-2xl mb-6">
+                <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/80 text-blue-800">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
                         <i class="fas fa-flask"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">البحث والتطوير</h3>
                     <p>نستثمر بشكل كبير في البحث والتطوير لابتكار منتجات جديدة تلبي احتياجات المستهلكين المتغيرة</p>
                 </div>
                 
-                <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/30 text-emerald-100">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 text-2xl mb-6">
+                <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/80 text-blue-800">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
                         <i class="fas fa-recycle"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">الاستدامة</h3>
                     <p>نتبنى ممارسات مستدامة في جميع عملياتنا للحفاظ على البيئة للأجيال القادمة</p>
                 </div>
                 
-                <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/30 text-emerald-100">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 text-2xl mb-6">
+                <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-8 transform transition duration-500 hover:scale-105 hover:bg-white/80 text-blue-800">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mb-6">
                         <i class="fas fa-industry"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">التقنية المتطورة</h3>
@@ -872,10 +871,10 @@
                 </div>
             </div>
             
-            <div class="mt-16 bg-white/20 backdrop-blur-sm rounded-2xl p-8 md:p-12 text-center text-white">
+            <div class="mt-16 bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-12 text-center text-blue-800">
                 <h3 class="text-3xl font-bold mb-6">انضم إلى رحلتنا الابتكارية</h3>
                 <p class="text-xl mb-8 max-w-2xl mx-auto">نبحث دائماً عن مواهب جديدة لتطوير صناعة الغذاء معاً</p>
-                <a href="#contact" class="inline-flex items-center bg-emerald-100 text-green-800 hover:bg-gray-100 font-bold px-8 py-4 rounded-full text-lg transition duration-300">
+                <a href="#contact" class="inline-flex items-center bg-blue-500 text-white hover:bg-blue-600 font-bold px-8 py-4 rounded-full text-lg transition duration-300">
                     انضم إلينا <i class="fas fa-arrow-left mr-2"></i>
                 </a>
             </div>
@@ -883,24 +882,24 @@
     </section>
 
     <!-- قسم اتصل بنا -->
-    <section id="contact" class="py-20 bg-emerald-500 relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/10"></div>
+    <section id="contact" class="py-20 bg-gradient-to-r from-blue-100 to-blue-200 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/30"></div>
         <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-16 text-white">
-                <h2 class="text-4xl font-bold mb-4">اتصل <span class="text-yellow-300">بنا</span></h2>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
+            <div class="text-center mb-16 text-blue-800">
+                <h2 class="text-4xl font-bold mb-4">اتصل <span class="text-blue-600">بنا</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
                 <p class="text-lg max-w-2xl mx-auto">نحن هنا للإجابة على استفساراتكم وتلقي ملاحظاتكم. لا تتردد في التواصل معنا.</p>
             </div>
             
             <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:ml-8">
-                    <div class="glass-effect rounded-2xl p-8 shadow-lg h-full text-emerald-100">
+                    <div class="glass-effect rounded-2xl p-8 shadow-lg h-full text-blue-800">
                         <h3 class="text-2xl font-bold mb-6">معلومات التواصل</h3>
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full p-3 ml-4 flex-shrink-0">
-                                    <i class="fas fa-map-marker-alt"></i>
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 ml-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
                                 </div>
                                 <div>
                                     <h4 class="text-lg font-bold mb-1">العنوان</h4>
@@ -909,8 +908,8 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full p-3 ml-4 flex-shrink-0">
-                                    <i class="fas fa-phone"></i>
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 ml-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
                                 </div>
                                 <div>
                                     <h4 class="text-lg font-bold mb-1">الهاتف</h4>
@@ -919,8 +918,8 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full p-3 ml-4 flex-shrink-0">
-                                    <i class="fas fa-envelope"></i>
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 ml-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
                                 </div>
                                 <div>
                                     <h4 class="text-lg font-bold mb-1">البريد الإلكتروني</h4>
@@ -929,8 +928,8 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full p-3 ml-4 flex-shrink-0">
-                                    <i class="fas fa-clock"></i>
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 ml-4 flex-shrink-0">
+                                    <i class="fas fa-clock text-white"></i>
                                 </div>
                                 <div>
                                     <h4 class="text-lg font-bold mb-1">ساعات العمل</h4>
@@ -942,16 +941,16 @@
                         <div class="mt-8">
                             <h4 class="text-lg font-bold mb-4">تابعنا على</h4>
                             <div class="flex space-x-4 space-x-reverse">
-                                <a href="#" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
+                                <a href="#" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="#" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
+                                <a href="#" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
+                                <a href="#" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
+                                <a href="#" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:bg-white/40 text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300 transform hover:scale-110">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </div>
@@ -960,33 +959,33 @@
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <div class="glass-effect rounded-2xl p-8 shadow-lg text-emerald-100">
+                    <div class="glass-effect rounded-2xl p-8 shadow-lg text-blue-800">
                         <h3 class="text-2xl font-bold mb-6">أرسل رسالة</h3>
                         
                         <form>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                 <div>
                                     <label for="name" class="block mb-2">الاسم الكامل</label>
-                                    <input type="text" id="name" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300 placeholder-white/70" placeholder="أدخل اسمك الكامل">
+                                    <input type="text" id="name" class="w-full px-4 py-3 bg-white/70 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300 placeholder-blue-800/70" placeholder="أدخل اسمك الكامل">
                                 </div>
                                 
                                 <div>
                                     <label for="email" class="block mb-2">البريد الإلكتروني</label>
-                                    <input type="email" id="email" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300 placeholder-white/70" placeholder="أدخل بريدك الإلكتروني">
+                                    <input type="email" id="email" class="w-full px-4 py-3 bg-white/70 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300 placeholder-blue-800/70" placeholder="أدخل بريدك الإلكتروني">
                                 </div>
                             </div>
                             
                             <div class="mb-6">
                                 <label for="subject" class="block mb-2">الموضوع</label>
-                                <input type="text" id="subject" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300 placeholder-white/70" placeholder="موضوع الرسالة">
+                                <input type="text" id="subject" class="w-full px-4 py-3 bg-white/70 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300 placeholder-blue-800/70" placeholder="موضوع الرسالة">
                             </div>
                             
                             <div class="mb-6">
                                 <label for="message" class="block mb-2">الرسالة</label>
-                                <textarea id="message" rows="5" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300 placeholder-white/70" placeholder="اكتب رسالتك هنا"></textarea>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 bg-white/70 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300 placeholder-blue-800/70" placeholder="اكتب رسالتك هنا"></textarea>
                             </div>
                             
-                            <button type="submit" class="w-full bg-emerald-100 hover:bg-yellow-500 text-gray-800 py-4 rounded-lg font-bold text-lg transition duration-300 transform hover:scale-105">
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-4 rounded-lg font-bold text-lg transition duration-300 transform hover:scale-105">
                                 إرسال الرسالة <i class="fas fa-paper-plane mr-2"></i>
                             </button>
                         </form>
@@ -997,35 +996,34 @@
     </section>
 
     <!-- الفوتر -->
-    <footer class="bg-gradient-to-r from-emerald-500 to-teal-600 text-emerald-100 py-12">
+    <footer class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 font-bold">ن</div>
-                        <span class="mr-3 text-xl font-bold">نخبة زمزم</span>
-                    </div>
-                    <p class="mt-4 max-w-md text-emerald-100">شركة رائدة في صناعة المواد الغذائية، نقدم منتجات عالية الجودة تلبي احتياجات المستهلكين وتواكب التطورات الحديثة في الصناعة الغذائية.</p>
+                <div class="flex items-center">
+                    <img src="logo.png" alt="زمزم يمن " class="w-20 h-20 shadow-lg pulse-glow">
+                </div>
+                    <p class="mt-4 max-w-md text-blue-800">شركة رائدة في صناعة المواد الغذائية، نقدم منتجات عالية الجودة تلبي احتياجات المستهلكين وتواكب التطورات الحديثة في الصناعة الغذائية.</p>
                 </div>
                 
                 <div class="flex space-x-6 space-x-reverse">
-                    <a href="#" class="text-white hover:text-green-800 transition duration-300 transform hover:scale-110">
+                    <a href="#" class="text-blue-700 hover:text-blue-500 transition duration-300 transform hover:scale-110">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-green-800 transition duration-300 transform hover:scale-110">
+                    <a href="#" class="text-blue-700 hover:text-blue-500 transition duration-300 transform hover:scale-110">
                         <i class="fab fa-facebook-f text-xl"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-green-800 transition duration-300 transform hover:scale-110">
+                    <a href="#" class="text-blue-700 hover:text-blue-500 transition duration-300 transform hover:scale-110">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-green-800 transition duration-300 transform hover:scale-110">
+                    <a href="#" class="text-blue-700 hover:text-blue-500 transition duration-300 transform hover:scale-110">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
                 </div>
             </div>
             
-            <div class="border-t border-white-700 mt-8 pt-8 text-center text-emerald-100">
-                <p>جميع الحقوق محفوظة &copy; 2025 شركة نخبة زمزم</p>
+            <div class="border-t border-blue-300 mt-8 pt-8 text-center text-blue-800">
+                <p>جميع الحقوق محفوظة &copy; 2025 شركة زمزم يمن</p>
             </div>
         </div>
     </footer>
@@ -1196,5 +1194,4 @@
         });
     </script>
 </body>
-
 </html>
